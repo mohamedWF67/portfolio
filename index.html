@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name · Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="logo">YN</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>Hi, I'm <span>Your Name</span>.</h1>
+      <p>I build simple, useful things for the web.</p>
+      <a class="btn" href="#projects">See my work</a>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Write a short paragraph about yourself: what you study or do, what you enjoy,
+        and what you are looking for next.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>One sentence describing what it does and what you used to build it.</p>
+          <a href="#">View project</a>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>One sentence describing what it does and what you used to build it.</p>
+          <a href="#">View project</a>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>One sentence describing what it does and what you used to build it.</p>
+          <a href="#">View project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Want to work together or just say hi?</p>
+      <p><a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
